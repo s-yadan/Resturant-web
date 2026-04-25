@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omer's Cafe | Taste The Legend</title>
+    <link rel="stylesheet" href="Omar's Resturant.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="logo">Omar's Cafe</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Taste That Hits Different</h1>
+            <p>Authentic flavors, sharp ambiance, zero compromise.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <!-- Menue -->
+    <section id="menu" class="menu">
+        <h2>Our Signature Dishes</h2>
+        <div class="menu-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="starters">Starters</button>
+            <button class="filter-btn" data-filter="mains">Mains</button>
+            <button class="filter-btn" data-filter="desserts">Desserts</button>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-item" data-category="mains">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500" alt="Steak">
+                <h3>Boss Level Steak</h3>
+                <p>250g grilled to perfection. Served with White sauce.</p>
+                <span class="price">Rs. 2499</span>
+            </div>
+            <div class="menu-item" data-category="starters">
+                <img src="Wings.jpg" alt="Wings">
+                <h3>Hot Wings</h3>
+                <p>Spicy wings that wake you up better than alarm.</p>
+                <span class="price">Rs. 899</span>
+            </div>
+            <div class="menu-item" data-category="mains">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500" alt="Pizza">
+                <h3>Cheezy Pizza</h3>
+                <p>Special Topping. Cheat meal without guilt.</p>
+                <span class="price">Rs. 1899</span>
+            </div>
+            <div class="menu-item" data-category="desserts">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500" alt="Dessert">
+                <h3>Cheeze Cake</h3>
+                <p>Sugar-free chocolate. Keeps your face cuts visible. Best for Athelites</p>
+                <span class="price">Rs. 799</span>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="about" class="about">
+        <div class="about-text">
+            <h2>Why Omar's Cafe?</h2>
+            <p>We started with a dream: food that Make your mood Good. Every dish is high-protein, macro-calculated, and tastes like a reward. From "Idea" to "To reality" "Don't Count Calories" to "Enjoy the Taste" - we understand the struggle. Now eat.</p>
+            <div class="stats">
+                <div><h3>10K+</h3><p>Steps Burned Here</p></div>
+                <div><h3>170g</h3><p>Protein Per Meal Option</p></div>
+                <div><h3>0%</h3><p>Judgement Served</p></div>
+            </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=500" alt="Chef">
+    </section>
+
+    
+    <section id="contact" class="contact">
+        <h2>Book A Table</h2>
+        <form id="booking-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="date" required>
+            <input type="time" required>
+            <select required>
+                <option value="">Guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="4">4 People</option>
+            </select>
+            <button type="submit" class="btn">Reserve Now</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Omar's Cafe. All rights reserved.</p>
+    </footer>
+
+    <script src="Omar's Resturant.js"></script>
+</body>
+</html>
